@@ -9,10 +9,10 @@ import java.util.List;
 public class RouteValidator {
 
     public static final List<String> openApiEndPoints = List.of(
-            "/users/register",
-            "/users/login",
+            "/users/authenticate",
             "/users/check-root-user",
-            "/users/check-valid-user"
+            "/users/check-valid-user",
+            "/eureka"
     );
 
     public Predicate<ServerHttpRequest> isSecured =
